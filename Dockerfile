@@ -63,4 +63,6 @@ ENV APACHE_LOG_DIR /var/log/apache2
 
 EXPOSE 80
 
+WORKDIR /var/www
+
 CMD ["apache2ctl", "-D", "FOREGROUND"]
