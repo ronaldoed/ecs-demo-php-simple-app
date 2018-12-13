@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 
 # Install dependencies
 RUN apt-get update && apt-get upgrade -y
-RUN apt-get install -y git curl apache2 apt-get install php-pear php-fpm php-dev php-zip php-curl php-xmlrpc php-gd php-mysql php-mbstring php-xml libapache2-mod-php
+RUN apt-get install -y git curl apache2 php-pear php-fpm php-dev php-zip php-curl php-xmlrpc php-gd php-mysql php-mbstring php-xml libapache2-mod-php
 RUN apt-cache search --names-only ^php
 
 # Install app
