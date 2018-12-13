@@ -1,8 +1,9 @@
-FROM ubuntu:12.04
+FROM ubuntu:16.04
 
 # Install dependencies
-RUN apt-get update -y
-RUN apt-get install -y git curl apache2 php5 libapache2-mod-php5 php5-mcrypt php5-mysql
+RUN apt-get update && apt-get upgrade -y
+RUN apt-get install software-properties-common -y
+RUN apt-get install -y git curl apache2 php7.2 libapache2-mod-php7.2 libargon2-0 libsodium23 libssl1.1 php7.2-cli php7.2-common php7.2-json php7.2-opcache php7.2-readline
 
 # Install app
 RUN rm -rf /var/www/*
