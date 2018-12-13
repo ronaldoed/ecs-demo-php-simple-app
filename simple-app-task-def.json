@@ -2,7 +2,7 @@
     "family": "console-sample-app",
     "volumes": [
         {
-            "name": "myvol",
+            "name": "my-vol",
             "host": {}
         }
     ],
@@ -21,8 +21,8 @@
             ],
             "mountPoints": [
                 {
-                    "sourceVolume": "myvol",
-                    "containerPath": "/var/www/myvol"
+                    "sourceVolume": "my-vol",
+                    "containerPath": "/var/www/my-vol"
                 }
             ],
             "entryPoint": [
@@ -47,7 +47,7 @@
                 "-c"
             ],
             "command": [
-                "/bin/sh -c \"while true; do /bin/date > /var/www/myvol/date; sleep 1; done\""
+                "/bin/sh -c \"while true; do /bin/date > /var/www/my-vol/date; sleep 1; done\""
             ],
             "essential": false
         }
