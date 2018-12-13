@@ -26,7 +26,7 @@
                 }
             ],
             "entryPoint": [
-                "/usr/sbin/apache2",
+                "apache2ctl",
                 "-D",
                 "FOREGROUND"
             ],
