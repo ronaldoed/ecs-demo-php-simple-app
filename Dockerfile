@@ -3,6 +3,7 @@ FROM ubuntu:16.04
 # Install dependencies
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install software-properties-common -y
+RUN add-apt-repository ppa:ondrej/php
 RUN apt-get install -y git curl apache2 php7.2 libapache2-mod-php7.2 libargon2-0 libsodium23 libssl1.1 php7.2-cli php7.2-common php7.2-json php7.2-opcache php7.2-readline
 
 # Install app
