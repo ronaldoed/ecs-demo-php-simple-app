@@ -10,7 +10,7 @@
         {
             "environment": [],
             "name": "simple-app",
-            "image": "636126204656.dkr.ecr.us-east-1.amazonaws.com/ecs-c-repos-yj0fh9p07z3t:16ae1d60",
+            "image": "amazon/amazon-ecs-sample",
             "cpu": 10,
             "memory": 500,
             "portMappings": [
@@ -26,7 +26,7 @@
                 }
             ],
             "entryPoint": [
-                "apache2ctl",
+                "/usr/sbin/apache2",
                 "-D",
                 "FOREGROUND"
             ],
